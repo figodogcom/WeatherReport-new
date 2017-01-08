@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/collection_rea"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="4dp"
+    android:background="@drawable/b01">
+
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:text="广东省珠海市"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tv_main_temp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:text="30"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/tv_temp_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_main_temp"
+        android:layout_toEndOf="@+id/tv_main_temp"
+        android:layout_toRightOf="@+id/tv_main_temp"
+        android:text="°C"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tv_cond_txt_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_main_temp"
+        android:layout_alignStart="@+id/tv_main_temp"
+        android:layout_below="@+id/tv_main_temp"
+        android:text="多云"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="17dp" />
+
+    <TextView
+        android:id="@+id/tv_tmp_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_city"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/tv_temp_mode"
+        android:text="35°"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tv_tmp_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_tmp_max"
+        android:layout_alignStart="@+id/tv_tmp_max"
+        android:layout_below="@+id/tv_wind_dir"
+        android:text="25°"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tv_wind_dir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_tmp_max"
+        android:layout_marginLeft="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_toEndOf="@+id/tv_tmp_max"
+        android:layout_toRightOf="@+id/tv_tmp_max"
+        android:text="东北风"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tv_hum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_wind_dir"
+        android:layout_alignStart="@+id/tv_wind_dir"
+        android:layout_alignTop="@+id/tv_tmp_min"
+        android:text="0%"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/tv_sc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_wind_dir"
+        android:layout_toEndOf="@+id/tv_wind_dir"
+        android:layout_toRightOf="@+id/tv_wind_dir"
+        android:text="5级"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="18dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bodercollectionout"
+        android:duplicateParentState="true" />
+
+</RelativeLayout>

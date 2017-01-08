@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:duplicateParentState="true"
+    android:orientation="horizontal">
+    
+    <!--android:background="@android:drawable/btn_default"-->
+    <AutoCompleteTextView
+        android:id="@+id/actv_cityname"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/btn"
+        android:completionThreshold="1"
+        android:hint="请输入城市名"
+        android:paddingLeft="8dp"
+        android:paddingRight="104dp" />
+
+    <ImageView
+        android:id="@+id/btn_cancel"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_toLeftOf="@+id/btn_search"
+        android:src="@drawable/ic_clear_black_48dp" />
+
+    <ImageView
+        android:id="@+id/btn_search"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_search_black_48dp" />
+
+</RelativeLayout>

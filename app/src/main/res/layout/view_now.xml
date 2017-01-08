@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/oneday_view"
+    android:layout_width="match_parent"
+    android:layout_height="360dp">
+
+    <TextView
+        android:id="@+id/tv_city_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="珠海"
+        android:textSize="30sp" />
+
+
+    <TextView
+        android:id="@+id/tv_tmp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_update"
+        android:layout_alignStart="@+id/tv_update"
+        android:layout_below="@+id/tv_city_name"
+        android:text="99°"
+        android:textSize="100sp" />
+
+    <TextView
+        android:id="@+id/tv_cond_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_tmp"
+        android:layout_centerHorizontal="true"
+        android:text="晴"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_tmp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_city_name"
+        android:layout_marginLeft="40dp"
+        android:layout_toLeftOf="@+id/tv_tmp"
+
+        android:layout_toStartOf="@+id/tv_tmp" />
+    <!--android:src="@drawable/d01"-->
+    <TextView
+        android:id="@+id/tv_wind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_update"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:longClickable="false"
+        android:text="无向风"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@id/tv_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_cond_txt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="最后更新时间 00:00"
+        android:textSize="14sp" />
+    <!--android:text="最后更新时间 00:00"-->
+    <TextView
+        android:id="@+id/tv_unit_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_tmp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/tv_tmp"
+        android:clickable="true"
+        android:text="C"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/tv_unit_down"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tv_unit_up"
+        android:layout_marginLeft="0dp"
+        android:layout_toRightOf="@+id/tv_tmp"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="F"
+        android:textColor="#999999"
+        android:textSize="30sp" />
+</RelativeLayout>

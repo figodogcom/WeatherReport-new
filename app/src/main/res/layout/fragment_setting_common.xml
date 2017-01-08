@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding= "utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp">
+
+    <TextView
+        android:id="@+id/tv_tempertruemode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="显示温度:"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_huashi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="华氏度"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rb_sheshi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="摄氏度"
+            android:textSize="18sp" />
+
+    </RadioGroup>
+
+    <ImageView
+        android:layout_width="260dp"
+
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="#e5e5e5" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="启动位置"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="(应用重启后更改生效)"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rb_default"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="默认位置"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rb_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="始终检测我的位置"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <com.yzw.weather.weatherreport.view.SettingSearchView
+        android:id="@+id/searchView"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>
